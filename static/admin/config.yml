@@ -141,6 +141,17 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - label: "Align Content (Select - options as strings)"
+            name: "align"
+            widget: "select"
+            options: ["left", "center", "right"]
+          - label: "City (Select - options as objects)"
+            name: "airport-code"
+            widget: "select"
+            options:
+              - { label: "Chicago", value: "ORD" }
+              - { label: "Paris", value: "CDG" }
+              - { label: "Tokyo", value: "HND" }
           # Text-editor
           - { label: "Body", name: "body", widget: "markdown" }
 
